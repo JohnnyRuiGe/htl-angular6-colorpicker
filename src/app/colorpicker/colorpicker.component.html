@@ -1,0 +1,5 @@
+<app-slider type="red" (valueChange)="handleValueChange('r', $event)"></app-slider>
+<app-slider type="green" (valueChange)="handleValueChange('g', $event)"></app-slider>
+<app-slider type="blue" (valueChange)="handleValueChange('b', $event)"></app-slider>
+<div style="margin-left: 20px; max-width: 200px; max-height: 200px; min-height: 200px;" [ngStyle]="{'background-color': hex, 'color': textBlack ? 'black' : 'white'}">{{hex}}</div>
+<button [disabled]="checkChanges()" color="primary" mat-raised-button (click)="save()" mat-button>Click me!</button>

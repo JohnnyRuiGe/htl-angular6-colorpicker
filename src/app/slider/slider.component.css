@@ -1,0 +1,13 @@
+:host{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 50px;
+  align-items: center;
+}
+
+:host > mat-form-field {
+  min-width: 50px;
+  max-width: 300px;
+  width: 100%;
+}
